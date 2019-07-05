@@ -1,0 +1,176 @@
+{
+	"info": {
+		"_postman_id": "b3bf0c62-636e-4189-9c3a-7481d6f610a3",
+		"name": "Akka Introduction",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Version",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8189/akka/version",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8189",
+					"path": [
+						"akka",
+						"version"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Health Check",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8189/akka/version",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8189",
+					"path": [
+						"akka",
+						"version"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create ticket",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8189/akka/ticket",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8189",
+					"path": [
+						"akka",
+						"ticket"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get ticket",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8189/akka/ticket?ticketId=5841cfcd-11f6-4b90-b939-68e156b1e83c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8189",
+					"path": [
+						"akka",
+						"ticket"
+					],
+					"query": [
+						{
+							"key": "ticketId",
+							"value": "5841cfcd-11f6-4b90-b939-68e156b1e83c"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cancel Ticket",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8189/akka/ticket/cancel?ticketId=5841cfcd-11f6-4b90-b939-68e156b1e83c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8189",
+					"path": [
+						"akka",
+						"ticket",
+						"cancel"
+					],
+					"query": [
+						{
+							"key": "ticketId",
+							"value": "5841cfcd-11f6-4b90-b939-68e156b1e83c"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Start Ticket",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8189/akka/ticket/start?ticketId=5841cfcd-11f6-4b90-b939-68e156b1e83c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8189",
+					"path": [
+						"akka",
+						"ticket",
+						"start"
+					],
+					"query": [
+						{
+							"key": "ticketId",
+							"value": "5841cfcd-11f6-4b90-b939-68e156b1e83c"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Resolve Ticket",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8189/akka/ticket/resolve?ticketId=5841cfcd-11f6-4b90-b939-68e156b1e83c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8189",
+					"path": [
+						"akka",
+						"ticket",
+						"resolve"
+					],
+					"query": [
+						{
+							"key": "ticketId",
+							"value": "5841cfcd-11f6-4b90-b939-68e156b1e83c"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
